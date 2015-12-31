@@ -71,7 +71,7 @@ namespace Excercise.CardGameDomain
             int builtTimeSeed = Guid.NewGuid().GetHashCode();
 
             //Configured value must be provided and encrypted
-            int configuredTimeSeed = 842370;
+            int configuredTimeSeed = 0;
             int.TryParse(ConfigurationManager.AppSettings["RandomSeed"], out configuredTimeSeed);   
 
             //Include time as well to make it randome
