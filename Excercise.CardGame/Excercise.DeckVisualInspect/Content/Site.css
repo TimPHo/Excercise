@@ -1,0 +1,51 @@
+﻿body {
+    padding: 5px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+#optionsArea select {
+    width: 200px;
+    float: left;
+    margin-right: 5px;
+}
+
+#status {
+    height: 5px;
+    color: black;
+}
+    
+.deck-option 
+{
+    width: 100%;
+    clear: both;
+    margin-top:5px;
+}
+
+
+.deck {
+    max-width: 800px;
+}
+
+.card {
+    width: 100px;
+    height: 120px;
+    margin: 5px 2px;
+}
+
+.card 
+    .name { 
+        font-weight: bold;
+        padding: 5px;
+    }
+    .suit {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+.heart, .diam {
+    color: red;
+}

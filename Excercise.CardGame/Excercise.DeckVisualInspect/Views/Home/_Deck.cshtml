@@ -1,0 +1,22 @@
+﻿@model Excercise.CardGameDomain.IDeck
+
+@{
+    if (@Model == null)
+    {
+        return;       
+    }
+}
+
+<div class="deck">
+    @for (var i = 0; i < Model.Cards.Count; i += 4)
+    {
+        <div class="row">
+            @for (var j = 0; j < 4 && i+j < Model.Cards.Count; j++)
+            {
+                <div class="col-xs-5 col-sm-3">
+                    @(Html.Partial("_Card", Model.Cards[i + j]))
+                </div>
+            }
+        </div>
+    }
+</div>

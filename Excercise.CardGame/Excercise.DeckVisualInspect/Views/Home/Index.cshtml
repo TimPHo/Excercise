@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Deck Visual Inspector</h2>
+<div id="optionsArea">
+    <select id="deckType" class="form-control">
+        <option value="@((int)DeckType.Standard)">Single Deck</option>
+        <option value="@((int)DeckType.MultipleDecks)">Multiple Decks</option>
+        <option value="@((int)DeckType.Spanish21)">Spanish 21 Deck</option>
+    </select>
+    <button type="button" id="newBttn" class="btn btn-sm btn-primary">New Deck</button>
+    <div class="deck-option">
+        <div id="status" class="text-info"></div><br />
+        <button type="button" id="sortBttn" class="btn btn-sm btn-link">Sort</button>
+        <button type="button" id="shuffleBttn" class="btn btn-sm btn-link">Shuffle</button>
+    </div>
+</div>
+<div id="displayArea"></div>
+
+@section Scripts
+{
+    @Scripts.Render("~/Scripts/DeckVisualInspect/Home.Index.js")
+}
+
