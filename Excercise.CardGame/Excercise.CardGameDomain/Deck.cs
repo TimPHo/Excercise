@@ -84,7 +84,7 @@ namespace Excercise.CardGameDomain
             throw new NotImplementedException();
         }
 
-        public Card Draw()
+        public ICard Draw()
         {
             throw new NotImplementedException();
         }
@@ -104,7 +104,7 @@ namespace Excercise.CardGameDomain
 
         void Cut();
 
-        Card Draw();
+        ICard Draw();
     }
 
 
